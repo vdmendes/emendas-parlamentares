@@ -1,0 +1,10 @@
+
+
+
+cd /Users/viniciusamendes/Downloads/emendas-parlamentares/database_portal/script-scrap
+python3 -m venv .venv
+source .venv/bin/activate
+pip install playwright
+playwright install chromium
+
+python3 emendas_transparencia.py --datasets documentos --anos 2024 -v
